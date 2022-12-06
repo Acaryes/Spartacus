@@ -1,0 +1,29 @@
+<ng-container>
+
+  <div>
+
+    <h1>{{'global.welcome' | cxTranslate}}</h1>
+
+    <div class="card" style="width: 18rem; ">
+
+    <img class="card-img-top" [src]="product.images.PRIMARY?.cartIcon.url" alt="Card image cap">
+
+      <div class="card-body">
+
+        <h5  class="card-title">{{product.name}}</h5>
+
+        <p class="card-text">{{product.price.formattedValue}}</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<ng-template class="myProjectPage stop-navigating" #elseOpt>
+
+    <p>error</p>
+
+</ng-template>
+
+</ng-container>
